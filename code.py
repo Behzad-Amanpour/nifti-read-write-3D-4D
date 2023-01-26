@@ -32,14 +32,14 @@ for i in range(s[3]):    # The 4D file contains 100 volumes, and after this loop
     name='fmri_3D_' + str(i+1) + '.nii'
     nib.save(Im_file2, name)
 
-# Conversion to numpy ========================= Behzad Amanpour =================
-Im2=np.int16(Im)
-np.save('fmri', Im2)
-Im3=np.load('fmri.npy')
+# Saving on disk as a numpy file ============== Behzad Amanpour ==================
+Im2=np.int16(Im)    # you don't need necessarily converting to "integer". It reduces the files size on your disk compared to "float" format
+np.save('path on disk\\fmri', Im2)
 
-#--------- Behzad Amanpour -----------------
+# loading numpy from disk ===================== Behzad Amanpour ==================
+Im2=np.load('path on disk\\fmri.npy')
+Im3=Im2[:,:,25,0]
 
 import matplotlib.pyplot as plt
-Im2=Im3[:,:,25,0]
-plt.imshow(Im2,cmap='gray')
-np.save('fmri_2D',Im2)
+plt.imshow(Im3,cmap='gray')
+np.save('path on disk\\fmri_2D',Im3)
