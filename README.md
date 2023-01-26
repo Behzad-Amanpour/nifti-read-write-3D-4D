@@ -2,7 +2,7 @@
 
 In **code.py** you will see:
 
-- **Reading a 4D NIfTI** file using nibabel
+- **Reading a 4D fMRI NIfTI** file using nibabel
 
     - The file is **available** at: https://drive.google.com/file/d/1sLp4W8hiAvuv4XDZcnJbmfYREHFy-wfG/view?usp=sharing
 
