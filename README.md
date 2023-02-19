@@ -1,4 +1,4 @@
-# NIfTI Loading, Writing, Showing Image, 4D Trimming, 4D to 3D Conversion (Python)    
+## NIfTI Loading, Writing, Showing Image, 4D Trimming, 4D to 3D Conversion (Python)    
 
 In **code.py** you will see:
 
